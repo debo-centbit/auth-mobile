@@ -12,7 +12,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "RNTypescriptStarter";
+    return "Centbit Auth";
   }
 
   /**

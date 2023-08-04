@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "RNTypescriptStarter.app"
-               BlueprintName = "RNTypescriptStarter"
-               ReferencedContainer = "container:RNTypescriptStarter.xcodeproj">
+               BuildableName = "CentbitAuth.app"
+               BlueprintName = "CentbitAuth"
+               ReferencedContainer = "container:CentbitAuth.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "RNTypescriptStarterTests.xctest"
-               BlueprintName = "RNTypescriptStarterTests"
-               ReferencedContainer = "container:RNTypescriptStarter.xcodeproj">
+               BuildableName = "CentbitAuthTests.xctest"
+               BlueprintName = "CentbitAuthTests"
+               ReferencedContainer = "container:CentbitAuth.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "RNTypescriptStarter.app"
-            BlueprintName = "RNTypescriptStarter"
-            ReferencedContainer = "container:RNTypescriptStarter.xcodeproj">
+            BuildableName = "CentbitAuth.app"
+            BlueprintName = "CentbitAuth"
+            ReferencedContainer = "container:CentbitAuth.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "RNTypescriptStarter.app"
-            BlueprintName = "RNTypescriptStarter"
-            ReferencedContainer = "container:RNTypescriptStarter.xcodeproj">
+            BuildableName = "CentbitAuth.app"
+            BlueprintName = "CentbitAuth"
+            ReferencedContainer = "container:CentbitAuth.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
