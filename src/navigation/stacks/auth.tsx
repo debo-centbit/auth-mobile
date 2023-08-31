@@ -11,8 +11,8 @@ const Stack = createStackNavigator<AuthStackParamList>();
 
 const authStackRoutes: StackRoutesType<AuthStackParamList> = [
   { name: RouteNames.login, component: LoginScreen },
-  { name: RouteNames.signUp, component: SignUpScreen },
-  { name: RouteNames.launch, component: LaunchScreen },
+  // { name: RouteNames.signUp, component: SignUpScreen },
+  // { name: RouteNames.launch, component: LaunchScreen },
 ];
 
 function AuthStack() {

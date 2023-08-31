@@ -42,6 +42,7 @@
     "@react-navigation/stack": "^6.1.1",
     "@tarikfp/react-native-utils": "^0.0.11",
     "axios": "^0.27.2",
+    "axios-mock-adapter": "^1.21.5",
     "i18next": "^20.6.1",
     "react": "17.0.2",
     "react-i18next": "^11.12.0",

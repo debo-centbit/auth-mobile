@@ -10,6 +10,6 @@ storiesOf("Buttons", module)
   .addDecorator((getStory) => (
     <View style={COMMON_STYLES.CENTER_CONTAINER}>{getStory()}</View>
   ))
-  .add("Base Button", () => (
-    <Button label={text("title", "Use KNOBS to change me!")} />
-  ));
+  // .add("Base Button", () => (
+  //   <Button label={text("title", "Use KNOBS to change me!")} />
+  // ));
