@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="7" failures="0" errors="0" time="37.613">
+  <testsuite name="FormFieldsComponent" errors="0" failures="0" skipped="0" timestamp="2023-09-01T08:58:18" time="36.271" tests="2">
+    <testcase classname="FormFieldsComponent renders correctly with provided props" name="FormFieldsComponent renders correctly with provided props" time="7.556">
+    </testcase>
+    <testcase classname="FormFieldsComponent calls handleChange when input value changes" name="FormFieldsComponent calls handleChange when input value changes" time="0.012">
+    </testcase>
+  </testsuite>
+  <testsuite name="SignUpScreen" errors="0" failures="0" skipped="0" timestamp="2023-09-01T08:58:19" time="36.286" tests="1">
+    <testcase classname="SignUpScreen renders correctly" name="SignUpScreen renders correctly" time="6.771">
+    </testcase>
+  </testsuite>
+  <testsuite name="LogoComponent" errors="0" failures="0" skipped="0" timestamp="2023-09-01T08:58:19" time="36.437" tests="2">
+    <testcase classname="LogoComponent renders correctly with provided props" name="LogoComponent renders correctly with provided props" time="6.907">
+    </testcase>
+    <testcase classname="LogoComponent matches the snapshot" name="LogoComponent matches the snapshot" time="0.02">
+    </testcase>
+  </testsuite>
+  <testsuite name="ButtonComponent" errors="0" failures="0" skipped="0" timestamp="2023-09-01T08:58:18" time="36.711" tests="2">
+    <testcase classname="ButtonComponent renders with correct props and styles" name="ButtonComponent renders with correct props and styles" time="6.936">
+    </testcase>
+    <testcase classname="ButtonComponent calls onPress handler when pressed" name="ButtonComponent calls onPress handler when pressed" time="0.185">
+    </testcase>
+  </testsuite>
+</testsuites>

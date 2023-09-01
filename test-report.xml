@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/deca/Documents/Tasks/forked/auth-mobile/src/components/shared/banner/banner.test.tsx">
+  </file>
+  <file path="/Users/deca/Documents/Tasks/forked/auth-mobile/src/components/button/button.test.tsx">
+  </file>
+  <file path="/Users/deca/Documents/Tasks/forked/auth-mobile/src/screens/sign-up/components/FormFieldsComponent.test.tsx">
+    <testCase name="FormFieldsComponent renders correctly with provided props" duration="7556"/>
+    <testCase name="FormFieldsComponent calls handleChange when input value changes" duration="12"/>
+  </file>
+  <file path="/Users/deca/Documents/Tasks/forked/auth-mobile/src/screens/sign-up/sign-up-screen.test.tsx">
+    <testCase name="SignUpScreen renders correctly" duration="6771"/>
+  </file>
+  <file path="/Users/deca/Documents/Tasks/forked/auth-mobile/src/screens/sign-up/components/LogoComponent.test.tsx">
+    <testCase name="LogoComponent renders correctly with provided props" duration="6907"/>
+    <testCase name="LogoComponent matches the snapshot" duration="20"/>
+  </file>
+  <file path="/Users/deca/Documents/Tasks/forked/auth-mobile/src/screens/sign-up/components/ButtonComponent.test.tsx">
+    <testCase name="ButtonComponent renders with correct props and styles" duration="6936"/>
+    <testCase name="ButtonComponent calls onPress handler when pressed" duration="185"/>
+  </file>
+</testExecutions>

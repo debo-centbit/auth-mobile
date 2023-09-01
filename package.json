@@ -33,8 +33,9 @@
     }
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.19.2",
     "@react-native-community/clipboard": "^1.5.1",
-    "@react-native-community/datetimepicker": "^3.4.6",
+    "@react-native-community/datetimepicker": "^7.4.1",
     "@react-native-community/netinfo": "^8.1.0",
     "@react-native-masked-view/masked-view": "^0.2.6",
     "@react-navigation/bottom-tabs": "^6.3.1",
@@ -42,9 +43,11 @@
     "@react-navigation/stack": "^6.1.1",
     "@tarikfp/react-native-utils": "^0.0.11",
     "axios": "^0.27.2",
+    "expo": "^49.0.7",
     "i18next": "^20.6.1",
     "react": "17.0.2",
     "react-i18next": "^11.12.0",
+    "react-icons": "^4.10.1",
     "react-native": "0.68.1",
     "react-native-dotenv": "^3.3.1",
     "react-native-gesture-handler": "^2.4.2",
@@ -53,7 +56,8 @@
     "react-native-modal": "^13.0.1",
     "react-native-safe-area-context": "^4.2.4",
     "react-native-screens": "^3.13.1",
-    "react-native-vector-icons": "^9.1.0"
+    "react-native-vector-icons": "^9.1.0",
+    "watchman": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -100,6 +104,9 @@
     "eslint-plugin-react-native": "^4.0.0",
     "husky": "^7.0.4",
     "jest": "^26.6.3",
+    "jest-junit": "^16.0.0",
+    "jest-sonar-reporter": "^2.0.0",
+    "metro-babel-register": "^0.78.1",
     "metro-react-native-babel-preset": "^0.67.0",
     "prettier": "^2.6.1",
     "react-native-clean-project": "^4.0.1",
