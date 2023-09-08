@@ -1,8 +1,8 @@
 import React from "react";
 import { render } from "@testing-library/react-native";
 import LogoComponent from "./LogoComponent";
-import { Position } from "../sign-up-screen";
 import * as Jest from "@testing-library/jest-native/extend-expect";
+import { Position } from "../types/enums";
 
 describe("LogoComponent", () => {
   const mockProps = {

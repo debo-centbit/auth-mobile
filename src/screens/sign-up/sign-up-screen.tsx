@@ -1,47 +1,14 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
-import {
-  Text,
-  TouchableWithoutFeedback,
-  View,
-  Keyboard,
-  ScrollView,
-} from "react-native";
+import { Text, TouchableWithoutFeedback, View, Keyboard } from "react-native";
 import { COMMON_STYLES } from "../../theme/common-styles";
 import ButtonComponent from "./components/ButtonComponent";
 import FormFieldsComponent from "./components/FormFieldsComponent";
 import LogoComponent from "./components/LogoComponent";
 import axios from "axios";
 import Icon from "react-native-vector-icons/FontAwesome5";
-
-export interface UserDetailsProps {
-  firstName?: string;
-  lastName?: string;
-  fullName?: string;
-  email?: string;
-  phoneNumber?: string;
-  password?: string;
-  [key: string]: any;
-}
-
-export enum Position {
-  ABSOLUTE = "absolute",
-  RELATIVE = "relative",
-}
-
-interface StyleProps {
-  color: string;
-  top: number;
-  left: number;
-  position: Position;
-  borderRadius: number;
-  bgColor: string;
-  width: number;
-  height: number;
-  inputBorderRadius: number;
-  inputMarginTop: number;
-  backBtnLeft: number;
-}
+import { StyleProps, UserDetailsProps } from "./types/interfaces";
+import { Position } from "./types/enums";
 
 function SignUpScreen() {
   const [userDetails, setUserDetails] = useState<UserDetailsProps>({
@@ -78,9 +45,7 @@ function SignUpScreen() {
     setUserDetails((prevDetails) => ({ ...prevDetails, [fieldName]: value }));
   };
 
-  const handlePressSignUp = () => {
-    console.log("Sign up btn clicked");
-  };
+  const handlePressSignUp = () => {};
 
   useEffect(() => {
     setStyles({
@@ -100,7 +65,7 @@ function SignUpScreen() {
 
   return (
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
-      <View style={[COMMON_STYLES.CENTER_CONTAINER]}>
+      <View style={COMMON_STYLES.CENTER_CONTAINER}>
         {showForm && (
           <>
             <ButtonComponent

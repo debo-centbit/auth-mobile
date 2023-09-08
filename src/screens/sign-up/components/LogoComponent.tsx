@@ -1,17 +1,6 @@
 import React from "react";
 import { Image, View, StyleSheet } from "react-native";
-import { Position } from "../sign-up-screen";
-
-interface LogoProps {
-  imageUrl: string;
-  logoWidth: number;
-  logoHeight: number;
-  logoPosition: Position;
-  logoTop: number;
-  logoLeft: number;
-  containerTestID: string;
-  imageTestID: string;
-}
+import { LogoProps } from "../types/interfaces";
 
 const LogoComponent: React.FC<LogoProps> = ({
   imageUrl,

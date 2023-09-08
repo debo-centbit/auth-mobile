@@ -1,20 +1,6 @@
 import React, { ReactNode } from "react";
 import { StyleSheet, TouchableOpacity } from "react-native";
-import { Position } from "../sign-up-screen";
-
-export interface ButtonProps {
-  borderRadius: number;
-  children: ReactNode|string;
-  top: number;
-  left: number;
-  position: Position;
-  color: string;
-  bgColor: string;
-  btnWidth: number;
-  btnHeight: number;
-  testID: string;
-  onPress: () => void;
-}
+import { ButtonProps } from "../types/interfaces";
 
 const ButtonComponent: React.FC<ButtonProps> = ({
   borderRadius,

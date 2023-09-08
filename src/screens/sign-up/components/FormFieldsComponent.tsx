@@ -1,19 +1,6 @@
 import React from "react";
 import { TextInput, StyleSheet, FlatList } from "react-native";
-import { UserDetailsProps } from "../sign-up-screen";
-
-interface FieldConfig {
-  name: string;
-  placeholder: string;
-}
-
-interface FormFieldsProps {
-  fieldsConfig: FieldConfig[];
-  handleChange: (fieldName: string, value: string) => void;
-  userDetails: UserDetailsProps;
-  borderRadius: number;
-  marginTop: number;
-}
+import { FormFieldsProps } from "../types/interfaces";
 
 const FormFieldsComponent: React.FC<FormFieldsProps> = ({
   fieldsConfig,

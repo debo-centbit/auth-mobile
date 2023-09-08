@@ -1,8 +1,8 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react-native";
 import ButtonComponent from "./ButtonComponent";
-import { Position } from "../sign-up-screen";
 import * as Jest from "@testing-library/jest-native/extend-expect";
+import { Position } from "../types/enums";
 
 describe("ButtonComponent", () => {
   const mockPressHandler = jest.fn();
@@ -26,7 +26,6 @@ describe("ButtonComponent", () => {
   it("renders with correct props and styles", () => {
     const { getByTestId } = render(<ButtonComponent {...props} />);
     const button = getByTestId("test-button");
-    console.log(button.props); // Print the props for debugging
 
     expect(button).toHaveStyle({
       display: "flex",
