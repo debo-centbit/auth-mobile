@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogoComponent matches the snapshot 1`] = `
+<View
+  style={
+    Object {
+      "height": "fit-content",
+      "left": 10,
+      "position": "absolute",
+      "top": 20,
+      "width": "fit-content",
+    }
+  }
+  testID="logo-container"
+>
+  <Image
+    source={
+      Object {
+        "uri": "https://example.com/logo.png",
+      }
+    }
+    style={
+      Object {
+        "height": 50,
+        "width": 100,
+      }
+    }
+    testID="logo-image"
+  />
+</View>
+`;

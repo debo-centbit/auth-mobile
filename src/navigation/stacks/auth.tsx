@@ -21,7 +21,7 @@ function AuthStack() {
       screenOptions={{
         headerShown: false,
       }}
-      initialRouteName={RouteNames.launch}>
+      initialRouteName={RouteNames.signUp}>
       {authStackRoutes.map((routes) => (
         <Stack.Screen key={routes.name} {...routes} />
       ))}

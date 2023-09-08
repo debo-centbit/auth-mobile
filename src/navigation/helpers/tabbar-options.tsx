@@ -16,4 +16,8 @@ export const BottomTabBarOptionByRouteName: Record<
     tabBarLabel: "Profile",
     tabBarIcon: (props) => <FontAwesome5 name="user" {...props} />,
   },
+  [RouteNames.signUp]: {
+    tabBarLabel: "Signup",
+    tabBarIcon: (props) => <FontAwesome5 name="user" {...props} />,
+  },
 };

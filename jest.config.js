@@ -18,11 +18,12 @@ module.exports = {
     "<rootDir>/node_modules/(react-clone-referenced-element|@react-native-community|@yz1311/react-native-wheel-picker|react-native-blob-util|react-native-pdf|@react-native-community/datetimepicker|react-navigation|react-native-device-info|@react-native-community/masked-view|react-native-skeleton-placeholder/lib/SkeletonPlaceholder.js|engine.io-client|engine.io-parser|socket.io-parser|@react-navigation/.*|@unimodules/.*)",
   ],
   moduleNameMapper: {
-    "react-i18next": "<rootDir>/__mocks__/i18n.ts",
+    "react-i18next": "/Users/deca/Documents/Tasks/auth-mobile personal/__mocks__/i18n.ts",
     "@react-native-community/datetimepicker":
-      "<rootDir>/__mocks__/DateTimePicker.tsx",
+      "/Users/deca/Documents/Tasks/auth-mobile personal/__mocks__/DateTimePicker.tsx",
     "^@api(.*)$": "<rootDir>/src/api$1",
     "^@assets(.*)$": "<rootDir>/src/assets$1",
+    "^~(.*)$": "/Users/deca/Documents/Tasks/auth-mobile personal/src$1",
     "^@components(.*)$": "<rootDir>/src/components$1",
     "^@lib(.*)$": "<rootDir>/src/lib$1",
     "^@localization(.*)$": "<rootDir>/src/localization$1",
