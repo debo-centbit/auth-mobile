@@ -1,6 +1,6 @@
 require("reflect-metadata");
 import mockAsyncStorage from "@react-native-async-storage/async-storage/jest/async-storage-mock";
-import SafeAreaContextMock from "react-native-safe-area-context/jest/mock";
+// import SafeAreaContextMock from "react-native-safe-area-context/jest/mock";
 import mockRNCNetInfo from "@react-native-community/netinfo/jest/netinfo-mock.js";
 
 jest.useFakeTimers();

@@ -6,6 +6,12 @@ export const COMMON_STYLES = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  CONTAINER:{
+    backgroundColor:'#FFF',
+    flex: 1,
+    alignItems: "center",
+    paddingTop: 30,
+  },
   FLEX: {
     flex: 1,
   },

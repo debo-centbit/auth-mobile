@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/edismacbook/Desktop/centbit/auth-mobile/src/components/shared/banner/banner.test.tsx">
+  </file>
+  <file path="/Users/edismacbook/Desktop/centbit/auth-mobile/src/components/passwordReset/button/button.test.tsx">
+  </file>
+  <file path="/Users/edismacbook/Desktop/centbit/auth-mobile/src/components/button/button.test.tsx">
+  </file>
+</testExecutions>

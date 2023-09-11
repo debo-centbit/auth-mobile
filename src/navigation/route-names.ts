@@ -7,4 +7,8 @@ export enum RouteNames {
   homeStack = "HomeStack",
   profileStack = "ProfileStack",
   storybook = "Storybook",
+  passwordReset = "PasswordReset",
+  passwordResetStack = "PasswordResetStack",
+  emailConfirmation = "EmailConfirmation",
+  newPassword = "newPassword"
 }

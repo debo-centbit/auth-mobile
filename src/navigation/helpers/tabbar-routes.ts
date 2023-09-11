@@ -7,6 +7,7 @@ import { BottomTabBarOptionByRouteName } from "~navigation/helpers/tabbar-option
 import { RouteNames } from "../route-names";
 import HomeStack from "../stacks/home";
 import ProfileStack from "../stacks/profile";
+import PasswordResetStack from "../stacks/passwordreset";
 import { BottomTabParamList } from "../types";
 
 export const BottomTabBarRoutes: Array<
@@ -27,5 +28,10 @@ export const BottomTabBarRoutes: Array<
     options: BottomTabBarOptionByRouteName[RouteNames.profileStack],
     name: RouteNames.profileStack,
     component: ProfileStack,
+  },
+  {
+    options: BottomTabBarOptionByRouteName[RouteNames.passwordResetStack],
+    name: RouteNames.passwordResetStack,
+    component: PasswordResetStack,
   },
 ];
