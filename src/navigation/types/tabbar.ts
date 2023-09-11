@@ -5,4 +5,6 @@ import { RouteNames } from "../route-names";
 export type BottomTabParamList = {
   [RouteNames.homeStack]: undefined;
   [RouteNames.profileStack]: undefined;
+  [RouteNames.passwordResetStack]: undefined;
+
 };
