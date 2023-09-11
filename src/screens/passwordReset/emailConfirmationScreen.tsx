@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import Button from "../../components/passwordReset/button/button";
 import {
   ActivityIndicator,
   ImageSourcePropType,
@@ -6,24 +6,42 @@ import {
   View,
 } from "react-native";
 import { COMMON_STYLES } from "~theme/common-styles";
-import Button from "../../components/passwordReset/button/button";
 import Header from "../../components/passwordReset/header/header";
 import PasswordTextComponent from "~components/passwordReset/text/text";
+import React, { useEffect, useState } from "react";
+
+/**
+ * A screen component for email confirmation.
+ *
+ * @param {object} props - The component's props.
+ * @param {boolean} props.email - Indicates if the confirmation is for an email (true) or a code (false).
+ * @returns {JSX.Element} The email confirmation screen.
+ */
 
 interface ConfirmationProp {
   email: boolean;
 }
 
 const EmailConfirmationScreen: React.FC<ConfirmationProp> = ({ email }) => {
+  /**
+   * Handles the "Back to Login" button click.
+   */
   const handleBackToLoginClick = () => {
     console.log("Back to Login button pressed");
   };
+
+  /**
+   * Handles the "Contact Support" button click.
+   */
   function handleSupport() {
     throw new Error("Function not implemented.");
   }
   const [isLoading, setIsLoading] = useState(true);
   const [contactSupport, setContactSupport] = useState(false);
 
+  /**
+   * Simulates loading and sets the "Contact Support" state.
+   */
   const handleClick = () => {
     setTimeout(() => {
       setIsLoading(false);
@@ -56,7 +74,6 @@ const EmailConfirmationScreen: React.FC<ConfirmationProp> = ({ email }) => {
   });
   useEffect(() => {
     setAdminSettings({
-      //  title: '',
       title: `Recovery ${email ? "Email" : "Code"} Sent!`,
       logo: require("../../assets/images/emojione_bird.png"),
       logoTop: 0,

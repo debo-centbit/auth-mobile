@@ -1,6 +1,6 @@
+import PasswordTextComponent from "./text";
 import React from "react";
 import { render } from "@testing-library/react-native";
-import PasswordTextComponent from "./text";
 
 describe("PasswordTextComponent", () => {
   const text = "Type in your new password";

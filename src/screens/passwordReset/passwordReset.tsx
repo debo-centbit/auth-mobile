@@ -1,21 +1,27 @@
+import Button from "../../components/passwordReset/button/button";
+import { COMMON_STYLES } from "~theme/common-styles";
+import EmailConfirmationScreen from "./emailConfirmationScreen";
+import Header from "../../components/passwordReset/header/header";
+import PasswordTextComponent from "~components/passwordReset/text/text";
 import React, { useEffect, useState } from "react";
+import TextInputComponent from "~components/passwordReset/textInput/textInput";
 import {
   View,
   StyleSheet,
-  TextInput,
   Text,
-  KeyboardTypeOptions,
   ImageSourcePropType,
-  KeyboardAvoidingView,
-  Platform,
 } from "react-native";
-import { COMMON_STYLES } from "~theme/common-styles";
-import Button from "../../components/passwordReset/button/button";
-import Header from "../../components/passwordReset/header/header";
-import TextInputComponent from "~components/passwordReset/textInput/textInput";
-import PasswordTextComponent from "~components/passwordReset/text/text";
-import EmailConfirmationScreen from "./emailConfirmationScreen";
-import NewPasswordScreen from "./newPassword";
+
+/**
+ * Password Reset screen component.
+ *
+ * @component
+ * @example
+ * // Usage in a navigation stack
+ * <PasswordReset />
+ *
+ * @returns {JSX.Element} The password reset screen.
+ */
 
 const PasswordReset = () => {
   const [email, setEmail] = useState("");
@@ -61,11 +67,19 @@ const PasswordReset = () => {
     setIsValidEmail(emailPattern.test(text));
     setEmail(text);
   };
+
+  /**
+   * Validates the phone input using regex.
+   *
+   * @param {string} text - The phone input text.
+   */
+
   const validatePhone = (text: string) => {
     const phonePattern = /^[0-9]{11}$/;
     setIsValidPhone(phonePattern.test(text));
     setPhone(text);
   };
+
   useEffect(() => {
     setAdminSettings({
       title: "Reset your password",

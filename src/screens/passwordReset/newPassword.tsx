@@ -1,10 +1,21 @@
-import React, { useEffect, useState } from "react";
-import { ImageSourcePropType, View, Text } from "react-native";
-import { COMMON_STYLES } from "~theme/common-styles";
 import Button from "../../components/passwordReset/button/button";
-import TextInputComponent from "~components/passwordReset/textInput/textInput";
+import { COMMON_STYLES } from "~theme/common-styles";
 import Header from "../../components/passwordReset/header/header";
+import { ImageSourcePropType, View, Text } from "react-native";
 import PasswordTextComponent from "~components/passwordReset/text/text";
+import React, { useEffect, useState } from "react";
+import TextInputComponent from "~components/passwordReset/textInput/textInput";
+
+/**
+ * A screen component for resetting the password.
+ *
+ * @component
+ * @example
+ * // Usage in a navigation stack
+ * <NewPasswordScreen />
+ *
+ * @returns {JSX.Element} The new password reset screen.
+ */
 
 const NewPasswordScreen = () => {
   const [newPassword, setNewPassword] = React.useState("");
@@ -22,6 +33,12 @@ const NewPasswordScreen = () => {
     validatePassword(newPassword, text);
   };
 
+  /**
+   * Validates the password inputs and sets error messages if necessary.
+   *
+   * @param {string} newPassword - The new password.
+   * @param {string} confirmPassword - The confirm password.
+   */
   const validatePassword = (newPassword: string, confirmPassword: string) => {
     if (newPassword !== confirmPassword && confirmPassword !== "") {
       setConfirmPasswordError("Passwords do not match");
