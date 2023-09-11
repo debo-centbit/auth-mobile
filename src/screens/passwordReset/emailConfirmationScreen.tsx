@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { ActivityIndicator, ImageSourcePropType, Text, View } from "react-native";
+import {
+  ActivityIndicator,
+  ImageSourcePropType,
+  Text,
+  View,
+} from "react-native";
 import { COMMON_STYLES } from "~theme/common-styles";
 import Button from "../../components/passwordReset/button/button";
 import Header from "../../components/passwordReset/header/header";
-import PasswordTextComponent from "~components/passwordReset/text";
-
+import PasswordTextComponent from "~components/passwordReset/text/text";
 
 interface ConfirmationProp {
-email:boolean,
+  email: boolean;
 }
 
-const EmailConfirmationScreen: React.FC<ConfirmationProp> = ({email}) => {
+const EmailConfirmationScreen: React.FC<ConfirmationProp> = ({ email }) => {
   const handleBackToLoginClick = () => {
     console.log("Back to Login button pressed");
   };
@@ -29,7 +33,7 @@ const EmailConfirmationScreen: React.FC<ConfirmationProp> = ({email}) => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000); 
+    }, 2000);
   }, []);
 
   const [adminSettings, setAdminSettings] = useState({
@@ -50,27 +54,27 @@ const EmailConfirmationScreen: React.FC<ConfirmationProp> = ({email}) => {
     buttonTwoBgColor: "",
     keyboardType: "",
   });
-     useEffect(() => {
-       setAdminSettings({
-        //  title: '',
-          title: `Recovery ${email ? "Email" : "Code"} Sent!`,
-         logo: require("../../assets/images/emojione_bird.png"),
-         logoTop: 0,
-         logoLeft: 0,
-         logoPosition: undefined,
-         titleColor: "#29B6F6",
-         titleFontSize: 36,
-         titleTop: 0,
-         titleLeft: 0,
-         titlePosition: undefined,
-         borderRadiusButton: 24,
-         buttonOneColor: "#29B6F6",
-         buttonOneBgColor: "#fff",
-         buttonTwoColor: "#fff",
-         buttonTwoBgColor: "#29B6F6",
-         keyboardType: "email-address",
-       });
-     }, []);
+  useEffect(() => {
+    setAdminSettings({
+      //  title: '',
+      title: `Recovery ${email ? "Email" : "Code"} Sent!`,
+      logo: require("../../assets/images/emojione_bird.png"),
+      logoTop: 0,
+      logoLeft: 0,
+      logoPosition: undefined,
+      titleColor: "#29B6F6",
+      titleFontSize: 36,
+      titleTop: 0,
+      titleLeft: 0,
+      titlePosition: undefined,
+      borderRadiusButton: 24,
+      buttonOneColor: "#29B6F6",
+      buttonOneBgColor: "#fff",
+      buttonTwoColor: "#fff",
+      buttonTwoBgColor: "#29B6F6",
+      keyboardType: "email-address",
+    });
+  }, []);
 
   return (
     <>

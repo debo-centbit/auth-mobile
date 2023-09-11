@@ -12,8 +12,8 @@ import {
 import { COMMON_STYLES } from "~theme/common-styles";
 import Button from "../../components/passwordReset/button/button";
 import Header from "../../components/passwordReset/header/header";
-import TextInputComponent from "~components/passwordReset/textInput";
-import PasswordTextComponent from "~components/passwordReset/text";
+import TextInputComponent from "~components/passwordReset/textInput/textInput";
+import PasswordTextComponent from "~components/passwordReset/text/text";
 import EmailConfirmationScreen from "./emailConfirmationScreen";
 import NewPasswordScreen from "./newPassword";
 
@@ -44,7 +44,6 @@ const PasswordReset = () => {
     buttonTwoBgColor: "",
   });
   const handleNextClick = () => {
-    // Check if the email is valid before proceeding
     if (isValidEmail) {
       setEmailConfirmationScreen(true);
     } else {
@@ -91,8 +90,6 @@ const PasswordReset = () => {
   }, []);
 
   return (
-    // <KeyboardAvoidingView
-    //   behavior={Platform.OS === "ios" ? "padding" : "height"}>
     <View style={COMMON_STYLES.CONTAINER}>
       {!emailConfirmationScreen && (
         <>
@@ -108,7 +105,13 @@ const PasswordReset = () => {
             titleLeft={adminSettings.titleLeft}
             titlePosition={adminSettings.titlePosition}
           />
-          <PasswordTextComponent text={`Type in your registered ${adminSettings.keyboardType==='email-address'?'email address':'phone number'} to reset your password`} />
+          <PasswordTextComponent
+            text={`Type in your registered ${
+              adminSettings.keyboardType === "email-address"
+                ? "email address"
+                : "phone number"
+            } to reset your password`}
+          />
           <TextInputComponent
             value={
               adminSettings.keyboardType === "email-address" ? email : phone
@@ -153,9 +156,12 @@ const PasswordReset = () => {
           />
         </>
       )}
-      {emailConfirmationScreen && <EmailConfirmationScreen email={adminSettings.keyboardType==='email-address'} />}
+      {emailConfirmationScreen && (
+        <EmailConfirmationScreen
+          email={adminSettings.keyboardType === "email-address"}
+        />
+      )}
     </View>
-    // </KeyboardAvoidingView>
   );
 };
 
@@ -163,7 +169,7 @@ const styles = StyleSheet.create({
   errorText: {
     color: "red",
     textAlign: "center",
-    marginBottom: 10, 
+    marginBottom: 10,
   },
 });
 

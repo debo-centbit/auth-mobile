@@ -1,12 +1,6 @@
 import React from "react";
 import { fireEvent, render } from "@testing-library/react-native";
 import Button from "./button"; 
-// import SafeAreaContextMock from "react-native-safe-area-context/jest/mock";
-
-
-
-
-// jest.mock("react-native-safe-area-context", () => SafeAreaContextMock);
 
 describe("Button component", () => {
   it("renders the button with the correct label", () => {
@@ -42,7 +36,7 @@ describe("Button component", () => {
 
     const buttonLabel = getByText(label);
 
-    fireEvent.press(buttonLabel); // Assuming you have 'fireEvent' imported
+    fireEvent.press(buttonLabel); 
 
     expect(onPressMock).toHaveBeenCalled();
   });

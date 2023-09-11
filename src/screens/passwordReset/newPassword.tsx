@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { ImageSourcePropType, View, Text } from "react-native";
 import { COMMON_STYLES } from "~theme/common-styles";
 import Button from "../../components/passwordReset/button/button";
-import TextInputComponent from "~components/passwordReset/textInput";
+import TextInputComponent from "~components/passwordReset/textInput/textInput";
 import Header from "../../components/passwordReset/header/header";
-import PasswordTextComponent from "~components/passwordReset/text";
+import PasswordTextComponent from "~components/passwordReset/text/text";
 
 const NewPasswordScreen = () => {
   const [newPassword, setNewPassword] = React.useState("");
@@ -41,43 +41,43 @@ const NewPasswordScreen = () => {
   }
 
   const [adminSettings, setAdminSettings] = useState({
-  title: "",
-  logo: "",
-  logoTop: 0,
-  logoLeft: 0,
-  logoPosition: undefined,
-  titleColor: "",
-  titleFontSize: 0,
-  titleTop: 0,
-  titleLeft: 0,
-  titlePosition: undefined,
-  borderRadiusInput: 0,
-  inputBgColor: "",
-  keyboardType: "",
-  borderRadiusButton: 0,
-  buttonOneColor: "",
-  buttonOneBgColor: "",
-});
-    useEffect(() => {
-      setAdminSettings({
-        title: "Reset your password",
-        logo: require("../../assets/images/emojione_bird.png"),
-        logoTop: 0,
-        logoLeft: 0,
-        logoPosition: undefined,
-        titleColor: "#29B6F6",
-        titleFontSize: 36,
-        titleTop: 0,
-        titleLeft: 0,
-        titlePosition: undefined,
-        borderRadiusInput: 24,
-        inputBgColor: "#fff",
-        keyboardType: "email-address",
-        borderRadiusButton: 24,
-        buttonOneColor: "#29B6F6",
-        buttonOneBgColor: "#fff",
-      });
-    }, []);
+    title: "",
+    logo: "",
+    logoTop: 0,
+    logoLeft: 0,
+    logoPosition: undefined,
+    titleColor: "",
+    titleFontSize: 0,
+    titleTop: 0,
+    titleLeft: 0,
+    titlePosition: undefined,
+    borderRadiusInput: 0,
+    inputBgColor: "",
+    keyboardType: "",
+    borderRadiusButton: 0,
+    buttonOneColor: "",
+    buttonOneBgColor: "",
+  });
+  useEffect(() => {
+    setAdminSettings({
+      title: "Reset your password",
+      logo: require("../../assets/images/emojione_bird.png"),
+      logoTop: 0,
+      logoLeft: 0,
+      logoPosition: undefined,
+      titleColor: "#29B6F6",
+      titleFontSize: 36,
+      titleTop: 0,
+      titleLeft: 0,
+      titlePosition: undefined,
+      borderRadiusInput: 24,
+      inputBgColor: "#fff",
+      keyboardType: "email-address",
+      borderRadiusButton: 24,
+      buttonOneColor: "#29B6F6",
+      buttonOneBgColor: "#fff",
+    });
+  }, []);
 
   return (
     <View style={COMMON_STYLES.CONTAINER}>
