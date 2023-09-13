@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import {
   StyleSheet,
   Text,
@@ -29,14 +29,15 @@ export default function Button({
         variant === 'back' && styles.backButtonStyle,
         variant === 'login' && styles.loginButtonStyle,
         style,
-        {backgroundColor: buttonColor},
+        { backgroundColor: buttonColor },
       ]}
       {...touchableOpacityProps}>
       {variant === 'back' ? (
         <Icon name="arrow-left" size={24} color="white" />
       ) : (
-        <Text style={styles.labelText}>Login <Text> </Text>
-            <Icon name="arrow-right" size={24} color="white" />
+        <Text style={styles.labelText}>
+          {label} <Text> </Text>
+          <Icon name="arrow-right" size={24} color="white" />
         </Text>
       )}
     </TouchableOpacity>
