@@ -10,39 +10,44 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 type Props = TouchableOpacityProps & {
   variant: 'back' | 'login'; 
   label: 'Back' | 'Login';
+  icon: string;
   buttonColor?: string; 
+
 };
 
 export default function Button({
   label,
   variant,
+  icon,
   style,
   buttonColor,
   ...touchableOpacityProps
 }: Props) {
+  const isBackButton = variant === 'back';
+  const containerStyle = [
+    styles.touchableOpacity,
+    isBackButton ? styles.backButtonStyle : styles.loginButtonStyle,
+    style,
+    { backgroundColor: buttonColor },
+  ];
+
   return (
     <TouchableOpacity
-      style={[
-        styles.touchableOpacity,
-        label === 'Back' && styles.backButtonStyle,
-        label === 'Login' && styles.loginButtonStyle,
-        variant === 'back' && styles.backButtonStyle,
-        variant === 'login' && styles.loginButtonStyle,
-        style,
-        { backgroundColor: buttonColor },
-      ]}
-      {...touchableOpacityProps}>
-      {variant === 'back' ? (
-        <Icon name="arrow-left" size={24} color="white" />
+      style={containerStyle}
+      {...touchableOpacityProps}
+    >
+      {isBackButton ? (
+        <Icon name={icon} size={24} color="white" />
       ) : (
         <Text style={styles.labelText}>
           {label} <Text> </Text>
-          <Icon name="arrow-right" size={24} color="white" />
+          <Icon name={icon} size={24} color="white" />
         </Text>
       )}
     </TouchableOpacity>
   );
 }
+
 
 const styles = StyleSheet.create({
   touchableOpacity: {

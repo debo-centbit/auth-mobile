@@ -30,7 +30,7 @@ const LoginScreen = () => {
     axios
       .get("https://reqres.in/api/users?page=2")
       .then((response) => {
-        setSettings(response.data.data[0]); // Assuming you want to use the first data item.
+        setSettings(response.data.data[0]); 
         setIsLoading(false);
       })
       .catch((error) => {
@@ -51,7 +51,7 @@ const LoginScreen = () => {
     return null;
   }
 
-  const { borderRadius, buttonColor, logoUrl, logoPosition } = settings;
+  const { buttonColor, logoUrl, logoPosition } = settings;
 
   return (
     <SafeAreaView style={styles.wrapper}>
@@ -60,6 +60,7 @@ const LoginScreen = () => {
           label="Back"
           variant="back"
           buttonColor={buttonColor}
+          icon="arrow-left" 
           onPress={() => navigation.goBack()}
         />
       </View>
@@ -78,6 +79,7 @@ const LoginScreen = () => {
             label="Login"
             variant="login"
             buttonColor={buttonColor}
+            icon="arrow-right"
             // onPress={() => navigation.navigate("Launch")}
           />
         </View>
