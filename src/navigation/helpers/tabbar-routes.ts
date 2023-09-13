@@ -8,6 +8,7 @@ import { RouteNames } from "../route-names";
 import HomeStack from "../stacks/home";
 import ProfileStack from "../stacks/profile";
 import { BottomTabParamList } from "../types";
+import AuthStack from "~navigation/stacks/auth";
 
 export const BottomTabBarRoutes: Array<
   RouteConfig<
@@ -28,4 +29,9 @@ export const BottomTabBarRoutes: Array<
     name: RouteNames.profileStack,
     component: ProfileStack,
   },
+  {
+    options: BottomTabBarOptionByRouteName[RouteNames.login],
+    name: RouteNames.login,
+    component: AuthStack,
+  }
 ];

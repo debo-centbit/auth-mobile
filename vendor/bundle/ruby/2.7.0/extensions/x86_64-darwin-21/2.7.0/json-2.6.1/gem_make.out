@@ -1,0 +1,13 @@
+current directory: /Users/deca/Desktop/centbit/auth-mobile/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+/Users/deca/.rbenv/versions/2.7.4/bin/ruby -I /Users/deca/.rbenv/versions/2.7.4/lib/ruby/2.7.0 -r ./siteconf20230810-35977-r322b.rb extconf.rb
+creating Makefile
+
+current directory: /Users/deca/Desktop/centbit/auth-mobile/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/deca/Desktop/centbit/auth-mobile/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/deca/Desktop/centbit/auth-mobile/vendor/bundle/ruby/2.7.0/gems/json-2.6.1/ext/json
+make "DESTDIR=" install
