@@ -45,8 +45,6 @@ const LoginScreen = ({}) => {
   }
 
   const {
-    emailOrPhone,
-    passwordOrMagicLink,
     borderRadius,
     buttonColor,
     logoUrl,
